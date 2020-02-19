@@ -1,4 +1,5 @@
+yarn-error.log
+config
 node_modules
 yarn.lock
 package-lock.json
-config

@@ -1,20 +1,24 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node index.ts",
+    "server": "nodemon index.ts",
+    "client": "npx react-native run-ios",
+    "dev": "npm run server"
   },
-  "author": "ncarreno",
-  "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
-    "express": "^4.17.1"
+    "@types/node": "^13.7.1",
+    "bcrypt": "^3.0.8",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.1",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.19.2",
-    "@typescript-eslint/parser": "^2.19.2",
-    "eslint": "^6.8.0"
+    "nodemon": "1.19.4"
   }
 }
